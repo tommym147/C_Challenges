@@ -8,8 +8,7 @@
 
 void printArray(int array [], int size) { // function that prints each element in array recursively
 	size--;
-	if (size == 0) { // base case
-		printf("%d ",array[size]);
+	if (size < 0) { // base case
 		return;
 	}
 	printArray(array, size);
